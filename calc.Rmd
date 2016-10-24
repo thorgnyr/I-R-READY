@@ -7,14 +7,14 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-The most basic of calculations are done by simply writing them as is. For example:
+###Basic calculations
 
 ```{r, results='hold'}
 1 + 1
 2 - 1
 2 * 2
 6 / 2
-2^3
-log(10)
-exp(1)
+2 ^ 3 ##2 in the power of 3.
 ```
+
+###Logarithms and Exponents
