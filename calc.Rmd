@@ -8,6 +8,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ###Basic calculations
+Below are examples of how to use basic calculation methods in R.
 
 ```{r, results='hold'}
 1 + 1
