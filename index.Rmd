@@ -1,7 +1,5 @@
 ---
-title: "index"
-author: "Þórgnýr Thoroddsen"
-date: "10/22/2016"
+title: "I R READY"
 output: html_document
 ---
 
@@ -9,13 +7,14 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-##What's the index?
+###What's the index?
 The index is a R markdown file that offers an index of the various chapters and categories of the project via links. Below you'll find all of the categories and specific functions alongside a short description about what is what. The idea is that it'll be easy to find what you're looking for here by simply using the find function in R studio or in your browser.
 
 ----
 
 ##Basics
 * [Calculations](calc.html)
+* [Data types: Vectors, variables, data frames, matrices & lists](datatypes.html)
 
 
 
