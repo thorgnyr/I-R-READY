@@ -14,8 +14,8 @@ The index is a R markdown file that offers an index of the various chapters and 
 
 ----
 
-##The example category
-* [Hello world!](hello.html)
+##Basics
+* [Calculations](calc.html)
 
 
 
