@@ -16,6 +16,9 @@ The index is a R markdown file that offers an index of the various chapters and 
 * [Calculations](calc.html)
 * [Data types: Vectors, variables, data frames, matrices & lists](datatypes.html)
 
+##Other
+* [Standard Example Data Page](examples.html)
+
 ----
 [LICENSE: CC-BY-SA-4.0](LICENSE)
 
