@@ -20,6 +20,7 @@ This is the index. It's an R markdown file that offers an index of the various c
 ##Other
 * [Standard Example Data Page](examples.html)
 * [Complete index of pages](fullindex.html)
+* [Þórgnýr er bestur](thorgnyr.html)
 
 ----
 [LICENSE: CC-BY-SA-4.0](LICENSE)
