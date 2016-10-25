@@ -19,26 +19,29 @@ Below are examples of how to use basic calculation methods in R.
 ```
 
 ###Logarithms and Exponents
-#### $log_2 8$ 
-    $2^x = 8$
-    $x=3$
+#####$log_2 8$ 
+  $2^x = 8$  \sep\
+  $x=3$
 ```{r}
 #log computes logarithms, by default natural logarithms, log10 computes common #(i.e., base 10) logarithms, and log2 computes binary (i.e., base 2) logarithms.
 log2(8)
 ```
 
-#### $log_3 20$
-    $log_3 20 = x$
-    $3^x = 20$
-    $x = \frac{log20}{log3} \approx 2.7268$
+#####Calculate the log 3 base of 20 
+  $log_3 20$  \sep\
+  $log_3 20 = x$  \sep\
+  $3^x = 20$  \sep\
+  $x = \frac{log20}{log3} \approx 2.7268$
 ```{r}
 #The general form log(x, base) computes logarithms with base.
 log(20,3)
 ```
 
-#### $log_x 81=4$
-    $x^4 = 81$
-    $x=3$
+#####What is the log base of 81=4
+What to the power of 4 is equal to 81 \sep\
+  $log_x 81=4$  \sep\
+  $x^4 = 81$  \sep\
+  $x=3$
 ```{r}
 81^(1/4) 
 #or
@@ -48,10 +51,11 @@ library(pracma)
 nthroot(81, 4)
 ```
 
-#### $ln(e^5)$
-    $log_e(e^5)=x$
-    $e^x = e^5$
-    $x=5$
+#####What is the natural logarithm of e to the fifth power
+  $ln(e^5)$
+  $log_e(e^5)=x$  \sep\
+  $e^x = e^5$\\
+  $x=5$
 
 ```{r}
 #log(x)	natural logarithm

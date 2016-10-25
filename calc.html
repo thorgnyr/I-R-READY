@@ -135,27 +135,30 @@ $(document).ready(function () {
 </div>
 <div id="logarithms-and-exponents" class="section level3">
 <h3>Logarithms and Exponents</h3>
-<div id="log_2-8" class="section level4">
-<h4><span class="math inline">\(log_2 8\)</span></h4>
-<pre><code>$2^x = 8$
-$x=3$</code></pre>
+<div id="log_2-8" class="section level5">
+<h5><span class="math inline">\(log_2 8\)</span></h5>
+<p><span class="math inline">\(2^x = 8\)</span> <br />
+ <span class="math inline">\(x=3\)</span></p>
 <pre class="r"><code>#log computes logarithms, by default natural logarithms, log10 computes common #(i.e., base 10) logarithms, and log2 computes binary (i.e., base 2) logarithms.
 log2(8)</code></pre>
 <pre><code>## [1] 3</code></pre>
 </div>
-<div id="log_3-20" class="section level4">
-<h4><span class="math inline">\(log_3 20\)</span></h4>
-<pre><code>$log_3 20 = x$
-$3^x = 20$
-$x = \frac{log20}{log3} \approx 2.7268$</code></pre>
+<div id="calculate-the-log-3-base-of-20" class="section level5">
+<h5>Calculate the log 3 base of 20</h5>
+<p><span class="math inline">\(log_3 20\)</span> <br />
+ <span class="math inline">\(log_3 20 = x\)</span> <br />
+ <span class="math inline">\(3^x = 20\)</span> <br />
+ <span class="math inline">\(x = \frac{log20}{log3} \approx 2.7268\)</span></p>
 <pre class="r"><code>#The general form log(x, base) computes logarithms with base.
 log(20,3)</code></pre>
 <pre><code>## [1] 2.726833</code></pre>
 </div>
-<div id="log_x-814" class="section level4">
-<h4><span class="math inline">\(log_x 81=4\)</span></h4>
-<pre><code>$x^4 = 81$
-$x=3$</code></pre>
+<div id="what-is-the-log-base-of-814" class="section level5">
+<h5>What is the log base of 81=4</h5>
+<p>What to the power of 4 is equal to 81 <br />
+ <span class="math inline">\(log_x 81=4\)</span> <br />
+ <span class="math inline">\(x^4 = 81\)</span> <br />
+ <span class="math inline">\(x=3\)</span></p>
 <pre class="r"><code>81^(1/4) </code></pre>
 <pre><code>## [1] 3</code></pre>
 <pre class="r"><code>#or
@@ -167,11 +170,10 @@ library(pracma)</code></pre>
 <pre class="r"><code>nthroot(81, 4)</code></pre>
 <pre><code>## [1] 3</code></pre>
 </div>
-<div id="lne5" class="section level4">
-<h4><span class="math inline">\(ln(e^5)\)</span></h4>
-<pre><code>$log_e(e^5)=x$
-$e^x = e^5$
-$x=5$</code></pre>
+<div id="what-is-the-natural-logarithm-of-e-to-the-fifth-power" class="section level5">
+<h5>What is the natural logarithm of e to the fifth power</h5>
+<p><span class="math inline">\(ln(e^5)\)</span> <span class="math inline">\(log_e(e^5)=x\)</span> <br />
+ <span class="math inline">\(e^x = e^5\)</span>\ <span class="math inline">\(x=5\)</span></p>
 <pre class="r"><code>#log(x) natural logarithm
 #exp(x) =   e^x
 #exp computes the exponential function. Note that ln is the inverse of exp.
