@@ -1,0 +1,23 @@
+---
+title: "Vectors"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+###Making a vector.
+Here are a few examples of a vector being defined.
+
+```{r, results='hold'}
+x <- c(1, 2, 3, 4, 5)
+y <- seq(1:5)
+z <- seq(1, 0, length = 10)
+z
+```
+
+
+
+----
+[LICENSE: CC-BY-SA-4.0](LICENSE) // [BACK TO INDEX](index.html)

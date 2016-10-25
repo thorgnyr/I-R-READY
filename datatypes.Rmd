@@ -27,7 +27,7 @@ x <- 1 + 1
 ```
 
 ###Vectors
-A vector is a sequence of data elements (or components) of the same type. When a vector is defined that holds data elements of various types, the vector coerces all the components to character values.
+A vector is a sequence of data elements (or components) of the same type. When a vector is defined that holds data elements of various types, the vector coerces all the components to character values. [More about vectors](vector.html)
 
 ```{r, results='hold'}
 x <- c(1, 2, 3)
