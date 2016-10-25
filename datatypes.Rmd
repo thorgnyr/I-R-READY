@@ -84,4 +84,4 @@ array <- array(c(x, y, z), dim = c(2, 2, 3)) ##The array takes the three vectors
 array
 ```
 ----
-[LICENSE: CC-BY-SA-4.0](LICENSE) // [BACK](index.html)
+[LICENSE: CC-BY-SA-4.0](LICENSE) // [BACK TO INDEX](index.html)
