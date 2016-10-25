@@ -21,4 +21,4 @@ Below are examples of how to use basic calculation methods in R.
 ###Logarithms and Exponents
 
 ----
-[LICENSE: CC-BY-SA-4.0](LICENSE)
+[LICENSE: CC-BY-SA-4.0](LICENSE) // [BACK](index.html)

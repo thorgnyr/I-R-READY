@@ -122,6 +122,12 @@ $(document).ready(function () {
 
 <div id="data-elements" class="section level3">
 <h3>Data elements</h3>
+<p>The term refers to the type of a particular element. The types in question are numerical, integer, complex, logical and character.</p>
+<pre class="r"><code>x &lt;- 1 ##This is a typical integer value
+y &lt;- 1.3 ##This is a typical numerical value
+z &lt;- 1 + 2i ##This is a typical complex value
+d &lt;- TRUE ##This is a typical logical value
+f &lt;- &quot;Blergh&quot; ##This is a typical character value</code></pre>
 </div>
 <div id="variables" class="section level3">
 <h3>Variables</h3>
@@ -136,18 +142,81 @@ $(document).ready(function () {
 y &lt;- c(&quot;a&quot;, &quot;b&quot;, &quot;c&quot;)
 z &lt;- c(TRUE, FALSE, TRUE)
 z2 &lt;- c(T, F, T)
-mix &lt;- c(1, &quot;b&quot;, TRUE)
+y2 &lt;- c(1 + 2i, 2 + 1i, 3 + 5i)
+mix &lt;- c(1, &quot;b&quot;, TRUE, 1 + 2i)
 class(mix)</code></pre>
 <pre><code>## [1] &quot;character&quot;</code></pre>
 </div>
 <div id="data-frames" class="section level3">
 <h3>Data Frames</h3>
-</div>
-<div id="matrices" class="section level3">
-<h3>Matrices</h3>
+<p>Data frames are used to store tables of data. Those tables are lists of vectors of the same length.</p>
+<pre class="r"><code>x &lt;- c(1.3, 2.4, 3.5) ##This is a vector with numericals.
+y &lt;- c(TRUE, TRUE, FALSE) ##This is a vector with logicals.
+z &lt;- c(&quot;Character!&quot;, &quot;Values!&quot;, &quot;Rock!&quot;) ##This is a vector of character values.
+df &lt;- data.frame(x, y, z) ##This is a data frame that includes the x, y and z's.
+df</code></pre>
+<pre><code>##     x     y          z
+## 1 1.3  TRUE Character!
+## 2 2.4  TRUE    Values!
+## 3 3.5 FALSE      Rock!</code></pre>
 </div>
 <div id="lists" class="section level3">
 <h3>Lists</h3>
+<p>A list is a vector that can contain other objects, just like vectors, but also including other vectors, data frames, etc.</p>
+<pre class="r"><code>x &lt;- c(1.3, 2.4, 3.5) ##This is a vector with numericals.
+y &lt;- c(TRUE, TRUE, FALSE, NA) ##This is a vector with logicals and an NA.
+z &lt;- &quot;Character!&quot; ##This is a single character value.
+l &lt;- list(x, y, z) ##This is a list that includes the x, y and z's.
+l</code></pre>
+<pre><code>## [[1]]
+## [1] 1.3 2.4 3.5
+## 
+## [[2]]
+## [1]  TRUE  TRUE FALSE    NA
+## 
+## [[3]]
+## [1] &quot;Character!&quot;</code></pre>
+</div>
+<div id="matrices" class="section level3">
+<h3>Matrices</h3>
+<p>A matrix is a two-dimensional layout of data elements of the same type. <a href="matrix.html">More about matrices</a></p>
+<pre class="r"><code>A &lt;- matrix(  ##Define matrix. Usually matrices are indicated with CAPITALS.
+  c(1, 2, 3, 4, 5, 6), ##Define the values to be held by the matrix.
+  nrow = 2, ##number of rows
+  ncol = 3, ##number of columns
+  byrow = TRUE) #How to fill the matrix with the defined values.
+A</code></pre>
+<pre><code>##      [,1] [,2] [,3]
+## [1,]    1    2    3
+## [2,]    4    5    6</code></pre>
+</div>
+<div id="arrays" class="section level3">
+<h3>Arrays</h3>
+<p>An array is a data object that can hold data in more than two dimensions. For example, an array of the size 2 x 2 x 4 would be four 2 x 2 matrices stacked up on each other. <a href="array.html">More about arrays</a></p>
+<pre class="r"><code>x &lt;- c(1, 2, 3, 4)
+y &lt;- c(4, 5, 6, 7)
+z &lt;- c(7, 8, 9, 10)
+array &lt;- array(c(x, y, z), dim = c(2, 2, 3)) ##The array takes the three vectors in, the dim parameter defines the dimensions of the array as 2 x 2 x 3
+array</code></pre>
+<pre><code>## , , 1
+## 
+##      [,1] [,2]
+## [1,]    1    3
+## [2,]    2    4
+## 
+## , , 2
+## 
+##      [,1] [,2]
+## [1,]    4    6
+## [2,]    5    7
+## 
+## , , 3
+## 
+##      [,1] [,2]
+## [1,]    7    9
+## [2,]    8   10</code></pre>
+<hr />
+<p><a href="LICENSE">LICENSE: CC-BY-SA-4.0</a> // <a href="index.html">BACK</a></p>
 </div>
 
 
