@@ -8,13 +8,15 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ###Making a vector.
-Here are a few examples of a vector being defined.
+Here are a few examples of a vector being defined. We're skipping assigning them to a variable to provide an immediate printout.
 
 ```{r, results='hold'}
-x <- c(1, 2, 3, 4, 5)
-y <- seq(1:5)
-z <- seq(1, 0, length = 10)
-z
+c(1, 2, 3, 4, 5) ##Creates the elements 1, 2, 3, 4 and 5.
+seq(1:5) ##Creates a sequence from 1 to (and including) 5.
+seq(1, 5, length = 10) ##Creates a sequence of 10 steps from 1 to (and including) 5.
+rep(1, 10) ##Creates a sequence of ten ones.
+rep(c(1, 2, 3), 3) ##Creates a sequence that's composed of 1, 2, 3, three times over.
+rep(c(1, 2, 3), each = 4) ##Creates a sequence that has four ones, four twos and four threes.
 ```
 
 

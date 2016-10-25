@@ -120,7 +120,25 @@ $(document).ready(function () {
 </div>
 
 
-
+<div id="making-a-vector." class="section level3">
+<h3>Making a vector.</h3>
+<p>Here are a few examples of a vector being defined. We’re skipping assigning them to a variable to provide an immediate printout.</p>
+<pre class="r"><code>c(1, 2, 3, 4, 5) ##Creates the elements 1, 2, 3, 4 and 5.
+seq(1:5) ##Creates a sequence from 1 to (and including) 5.
+seq(1, 5, length = 10) ##Creates a sequence of 10 steps from 1 to (and including) 5.
+rep(1, 10) ##Creates a sequence of ten ones.
+rep(c(1, 2, 3), 3) ##Creates a sequence that's composed of 1, 2, 3, three times over.
+rep(c(1, 2, 3), each = 4) ##Creates a sequence that has four ones, four twos and four threes.</code></pre>
+<pre><code>## [1] 1 2 3 4 5
+## [1] 1 2 3 4 5
+##  [1] 1.000000 1.444444 1.888889 2.333333 2.777778 3.222222 3.666667
+##  [8] 4.111111 4.555556 5.000000
+##  [1] 1 1 1 1 1 1 1 1 1 1
+## [1] 1 2 3 1 2 3 1 2 3
+##  [1] 1 1 1 1 2 2 2 2 3 3 3 3</code></pre>
+<hr />
+<p><a href="LICENSE">LICENSE: CC-BY-SA-4.0</a> // <a href="index.html">BACK TO INDEX</a></p>
+</div>
 
 
 
