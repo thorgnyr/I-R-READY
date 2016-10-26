@@ -15,7 +15,10 @@ This is the index. It's an R markdown file that offers an index of the various c
 ##Basics
 * [Calculations](calc.html)
 * [Data types: Vectors, variables, data frames, matrices & lists](datatypes.html)
-* []()
+
+##R Markdown
+* [Markdown](markdown.html)
+* [LaTeX](latex.html)
 
 ##Other
 * [Standard Example Data Page](examples.html)

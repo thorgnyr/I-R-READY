@@ -1,0 +1,11 @@
+---
+title: "Latex"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+----
+[LICENSE: CC-BY-SA-4.0](LICENSE)
