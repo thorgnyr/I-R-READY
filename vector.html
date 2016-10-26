@@ -123,19 +123,64 @@ $(document).ready(function () {
 <div id="making-a-vector." class="section level3">
 <h3>Making a vector.</h3>
 <p>Here are a few examples of a vector being defined. We’re skipping assigning them to a variable to provide an immediate printout.</p>
-<pre class="r"><code>c(1, 2, 3, 4, 5) ##Creates the elements 1, 2, 3, 4 and 5.
-seq(1:5) ##Creates a sequence from 1 to (and including) 5.
-seq(1, 5, length = 10) ##Creates a sequence of 10 steps from 1 to (and including) 5.
-rep(1, 10) ##Creates a sequence of ten ones.
-rep(c(1, 2, 3), 3) ##Creates a sequence that's composed of 1, 2, 3, three times over.
-rep(c(1, 2, 3), each = 4) ##Creates a sequence that has four ones, four twos and four threes.</code></pre>
-<pre><code>## [1] 1 2 3 4 5
-## [1] 1 2 3 4 5
-##  [1] 1.000000 1.444444 1.888889 2.333333 2.777778 3.222222 3.666667
-##  [8] 4.111111 4.555556 5.000000
-##  [1] 1 1 1 1 1 1 1 1 1 1
-## [1] 1 2 3 1 2 3 1 2 3
-##  [1] 1 1 1 1 2 2 2 2 3 3 3 3</code></pre>
+<pre class="r"><code>x &lt;- c(1, 2, 3, 4, 5) ##Creates the elements 1, 2, 3, 4 and 5.
+x &lt;- seq(1:5) ##Creates a sequence from 1 to (and including) 5.
+x &lt;- seq(1, 5, length = 10) ##Creates a sequence of 10 steps from 1 to (and including) 5.
+x &lt;- rep(1, 10) ##Creates a sequence of ten ones.
+x &lt;- rep(c(1, 2, 3), 3) ##Creates a sequence that's composed of 1, 2, 3, three times over.
+x &lt;- rep(c(1, 2, 3), each = 4) ##Creates a sequence that has four ones, four twos and four threes.
+x &lt;- rnorm(5) ##Creates a vector containing 5 elements with random variables from the normal distribution.</code></pre>
+</div>
+<div id="working-with-vectors." class="section level3">
+<h3>Working with vectors.</h3>
+<p>Here are code examples for a few methods that can be used on vectors.</p>
+<pre class="r"><code>x &lt;- (c(seq(1:10), 6, 11, 13)) ##An example vector that contains the values from 1 to 10 plus a few others.
+length(x) ##Returns a value corresponding to the number of values within the vector.
+sort(x) ##Returns the vector sorted from lowest to highest.
+sort(x, decreasing = TRUE) ##Returns the vector sorted from highest to lowest.
+rank(x) ##Returns the rank of each element of the vector, that is to say, where it'd get positioned were it to be sorted.
+order(x) ##Returns a list of in which order the elements would be positioned, were they to get sorted.
+mean(x) ##Displays the mean of the values in the vector.
+median(x) ##Displays the median value of a vector.
+quantile(x) ##Displays sample quantiles from the vector.</code></pre>
+<pre><code>## [1] 13
+##  [1]  1  2  3  4  5  6  6  7  8  9 10 11 13
+##  [1] 13 11 10  9  8  7  6  6  5  4  3  2  1
+##  [1]  1.0  2.0  3.0  4.0  5.0  6.5  8.0  9.0 10.0 11.0  6.5 12.0 13.0
+##  [1]  1  2  3  4  5  6 11  7  8  9 10 12 13
+## [1] 6.538462
+## [1] 6
+##   0%  25%  50%  75% 100% 
+##    1    4    6    9   13</code></pre>
+</div>
+<div id="manipulating-vectors" class="section level3">
+<h3>Manipulating vectors</h3>
+<p>Sometimes we need to put vectors together, or add them into data tables and so fourth. Here are some examples of how to do that.</p>
+<pre class="r"><code>c(x, x) ##Joins two vectors into a longer vector
+c(x, x, x) ##Joins twi vectors into a longer vector, aaaand so on..
+cbind(x, x) ##Joins two vectors together as columns in a matrix.
+rbind(x, x) ##Joins two vectors together as rows in a matrix.</code></pre>
+<pre><code>##  [1]  1  2  3  4  5  6  7  8  9 10  6 11 13  1  2  3  4  5  6  7  8  9 10
+## [24]  6 11 13
+##  [1]  1  2  3  4  5  6  7  8  9 10  6 11 13  1  2  3  4  5  6  7  8  9 10
+## [24]  6 11 13  1  2  3  4  5  6  7  8  9 10  6 11 13
+##        x  x
+##  [1,]  1  1
+##  [2,]  2  2
+##  [3,]  3  3
+##  [4,]  4  4
+##  [5,]  5  5
+##  [6,]  6  6
+##  [7,]  7  7
+##  [8,]  8  8
+##  [9,]  9  9
+## [10,] 10 10
+## [11,]  6  6
+## [12,] 11 11
+## [13,] 13 13
+##   [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8] [,9] [,10] [,11] [,12] [,13]
+## x    1    2    3    4    5    6    7    8    9    10     6    11    13
+## x    1    2    3    4    5    6    7    8    9    10     6    11    13</code></pre>
 <hr />
 <p><a href="LICENSE">LICENSE: CC-BY-SA-4.0</a> // <a href="index.html">BACK TO INDEX</a></p>
 </div>
