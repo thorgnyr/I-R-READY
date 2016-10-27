@@ -7,5 +7,24 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+###Text
+
+###Bullets and numbering
+
+###Code
+Code can be displayed and executed in R markdown. On one hand it can be written inline, and on the other hand it can be written into code chunks. In code chunks there's a variety of display options available that we'll also include in the examples below. **Take note**, that since code chunks can't be displayed within code chunks, we'll need to implement them here within commenting symbols (##)
+
+```{r, results = 'hold'}
+##```{r}
+##x <- 1 + 1
+##```
+##Above is a typical code chunk without any particular options.
+##
+##
+```
+
+
+
+
 ----
 [LICENSE: CC-BY-SA-4.0](LICENSE)
