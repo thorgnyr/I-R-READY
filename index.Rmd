@@ -8,7 +8,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ###What's this then?
-This is the index. It's an R markdown file that offers an index of the various chapters and categories of the project via links. Below you'll find all of the categories and specific functions alongside a short description about what is what. The idea is that it'll be easy to find what you're looking for here by simply using the find function in R studio or in your browser.
+This is the index. It's an R markdown file that offers an index of the various chapters and categories of the project via links. Below you'll find all of the categories and specific functions alongside a short description about what is what. The idea is that it'll be easy to find what you're looking for here by simply using the find function in R studio or in your browser. Blúbb.
 
 ----
 
