@@ -86,4 +86,4 @@ In this particular parameter example the **warning** parameter defines whether o
 More info on chunk parameters can be found [HERE](http://yihui.name/knitr/options/)
 
 ----
-[LICENSE: CC-BY-SA-4.0](LICENSE)
+[LICENSE: CC-BY-SA-4.0](LICENSE) // [BACK TO INDEX](index.html)
