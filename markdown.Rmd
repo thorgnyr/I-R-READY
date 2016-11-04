@@ -8,8 +8,21 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ###Text
+In markdown text is written directly into the document without any syntax. Naturally, however, you'll like to use a few tricks here and there.  
+  
+>**Bold** is done by typing ```**this will be bold text**``` or ```__this will be bold text__```  
+>*Italics* are done by typing ```*Italics!*```or ```_Italics!_```  
+>Super^scripts^ are done by typing ```Super^scripts^```  
+>--Strikethrough-- is done by typing ```--Strikethrough!--```
+
+Curiously, there's no way of underlining text in R markdown. **I know, right**?
+
+###Headers
 
 ###Bullets and numbering
+
+###Links and images
+
 
 ###Code
 Code can be displayed and executed in R markdown. On one hand it can be written inline, and on the other hand it can be written into code chunks. In code chunks there's a variety of display options available that we'll also include in the examples below.
@@ -52,7 +65,6 @@ Other variations on the **echo** parameter include:
 >```{r}
 >##Telling R to show all code, except line 3.
 >```
-
 
 Sometimes you don't even want the output to be seen either:
 
