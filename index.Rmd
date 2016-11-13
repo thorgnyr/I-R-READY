@@ -24,6 +24,8 @@ This is the index. It's an R markdown file that offers an index of the various c
 * [Standard Example Data Page](examples.html)
 * [Complete index of pages](fullindex.html)
 
+Typpi.
+
 ----
 [LICENSE: CC-BY-SA-4.0](LICENSE)
 
